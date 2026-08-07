@@ -1,0 +1,188 @@
+:root {
+    --color-primary: #FDC300;
+    --color-secondary: #ffcf00;
+    --color-text: #21282B;
+    --color-background: #f5f5f5;
+    --color-white: #ffffff;
+
+    --font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--color-background);
+}
+
+.header {
+    display: flex;
+}
+
+.app {
+    width: 1080px;
+    min-height: 1920px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-primary);
+}
+
+.logo {
+    background-color: var(--color-text);
+    padding: 60px 45px;
+    flex-shrink: 0;
+    width: fit-content;
+    clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 65%,
+            68% 100%,
+            0 100%
+    );
+}
+
+.logo img {
+    width: 213px;
+    height: 171px;
+}
+
+.title {
+    font-family: LM Title;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 100px;
+    letter-spacing: 0;
+    margin-top: 113px;
+    margin-right: 121px;
+    margin-left: 29px;
+    text-transform: uppercase;
+}
+
+.column_container {
+    margin-top: 92px;
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+    padding-left: 148px;
+    padding-right: 132px;
+}
+
+.column_item {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.item_header {
+    display: flex;
+    gap: 32px;
+    justify-content: start;
+}
+
+.item_header h2 {
+    font-family: LM Title;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.item_header img {
+    height: 59px;
+    width: 59px;
+    margin-top: 11px;
+}
+
+.item_body article {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: left;
+    margin-left: calc(59px + 32px);
+    margin-top: 18px;
+    width: 495px;
+}
+
+.item_body {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.item_body img {
+    height: 155px;
+    width: 155px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn {
+    position: relative;
+
+    font-weight: 600;
+    font-size: 53px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 430px;
+    height: 92px;
+
+    background: #fff;
+    border: none;
+
+    font-family: "LM Title";
+
+    cursor: pointer;
+}
+
+.btn::before {
+    content: "";
+
+    position: absolute;
+    left: -2px;
+    top: -2px;
+
+    width: 36px;
+    height: 36px;
+
+    background: var(--color-primary);
+
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.btn::after {
+    content: "";
+
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+
+    width: 36px;
+    height: 36px;
+
+    background: var(--color-primary);
+
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.footer_img {
+    width: 100%;
+    height: 800px;
+    background-image: url(/assets/img/footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
