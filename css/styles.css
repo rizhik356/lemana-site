@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'LM Title';
+    src: url('../assets/fonts/LMTitle/LMTitle-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LM Main';
+    src: url('../assets/fonts/LMMain/LMMain-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --color-primary: #FDC300;
     --color-secondary: #ffcf00;
@@ -46,12 +62,12 @@ body {
 }
 
 .title {
-    font-family: LM Title;
+    font-family: LM Title, sans-serif;
     font-weight: 700;
     font-size: 70px;
-    line-height: 100px;
+    line-height: 80px;
     letter-spacing: 0;
-    margin-top: 113px;
+    margin-top: 70px;
     margin-right: 121px;
     margin-left: 29px;
     text-transform: uppercase;
@@ -79,7 +95,7 @@ body {
 }
 
 .item_header h2 {
-    font-family: LM Title;
+    font-family: LM Title, sans-serif;
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
@@ -94,7 +110,7 @@ body {
 }
 
 .item_body article {
-    font-family: Inter;
+    font-family: LM Main, sans-serif;
     font-weight: 400;
     font-size: 28px;
     line-height: 100%;
@@ -139,7 +155,7 @@ body {
     background: #fff;
     border: none;
 
-    font-family: "LM Title";
+    font-family: LM Title, sans-serif;
 
     cursor: pointer;
 }
